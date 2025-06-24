@@ -129,7 +129,7 @@ static int reg_read(const struct device *dev, uint8_t reg, uint8_t *buf) {
     }
 
     k_busy_wait(T_SRX);
-
+    LOG_INF("reg_read result = %x", *buf);
     return 0;
 }
 
